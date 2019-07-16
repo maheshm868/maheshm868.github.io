@@ -1,0 +1,11 @@
+body{
+	box-shadow:4px 4px 5px #928484;
+	background-image: url("photo.jpg");
+	height: 100%;
+	width:100%;
+}
+h1{
+	font-family: monospace;
+	font-weight: bold;
+	text-align: center;
+}
