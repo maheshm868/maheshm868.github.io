@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>CSS Grid</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        img{
+            height:150px;
+            width:150px;
+        }
+    .zone{
+        cursor: pointer;
+        /* display:block; */
+        text-align: center;
+        font-size: 10em;
+        border-radius: 6px;
+        border:1px solid red;
+        transition: all 0.3s linear;
+    }
+    .zone:hover{
+        box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    }
+    .container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+    .green{
+        grid-column:1/-1;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="zone green"><img src="photo.jpg"></div>
+            <div class="zone red"><img src="photo.jpg"></div>
+            <div class="zone blue"><img src="photo.jpg"></div>
+            <div class="zone yellow"><img src="photo.jpg"></div>
+            <div class="zone green"><img src="photo.jpg"></div>
+            <div class="zone red"><img src="photo.jpg"></div>
+            <div class="zone blue"><img src="photo.jpg"></div>
+            <div class="zone yellow"><img src="photo.jpg"></div>
+            <div class="zone green"><img src="photo.jpg"></div>
+            <div class="zone red"><img src="photo.jpg"></div>
+            <div class="zone blue"><img src="photo.jpg"></div>
+            <div class="zone yellow"><img src="photo.jpg"></div>
+            <div class="zone green"><img src="photo.jpg"></div>
+            <div class="zone red"><img src="photo.jpg"></div>
+            <div class="zone blue"><img src="photo.jpg"></div>
+            <div class="zone yellow"><img src="photo.jpg"></div>
+            <div class="zone green"><img src="photo.jpg"></div>
+            <div class="zone red"><img src="photo.jpg"></div>
+            <div class="zone blue"><img src="photo.jpg"></div>
+            <div class="zone yellow"><img src="photo.jpg"></div>
+        </div>
+    </body>
+</html>

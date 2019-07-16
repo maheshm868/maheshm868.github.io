@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>CSS Grid</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        .nav{
+            background-color:whitesmoke;
+            display:flex;
+            font-size: medium;
+            position: fixed;
+            width:100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .nav li:last-child{
+            margin-left:auto;
+        }
+        @media only screen and (max-width:600px){
+            .nav{
+                font-size: small;
+                padding: 0px;
+            }
+            .nav li:last-child{
+                margin-left:0px;;
+            }
+        }
+        /* cover */
+        .container{
+            display: flex;
+            height: 100%;
+            width:100%;
+            padding: 0px;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+        .grid-wrapper{
+            background-color:white;
+            padding:20px;
+            display:grid;
+            grid-gap:20px;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        }
+        .grid-wrapper img{
+            padding:60px;
+            background-color:whitesmoke;
+        }
+        .zone:hover{
+            box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+        }
+    </style>
+    <body>
+        <nav>
+            <ul class="nav navbar-default">
+                <li class="active"><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li class="push"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <img src="cover.jpg" style="height:100%;width:100%"> 
+        </div>
+        <div class="grid-wrapper">
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+            <div class="zone"><img src="photo.jpg" style="height:100%;width:100%"></div>
+        </div>
+        <footer>
+            Footer goes here;
+        </footer>
+    </body>
+</html>
